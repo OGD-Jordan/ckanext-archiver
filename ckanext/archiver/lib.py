@@ -13,8 +13,9 @@ def compat_enqueue(name, fn, queue, args=None):
     '''
     try:
         # Try to use RQ
+        print("Archiver_4", name)
         from ckan.plugins.toolkit import enqueue_job
-        enqueue_job(fn, args=args, queue=queue)
+        enqueue_job(fn, args=args, title='Archiver',queue=queue, rq_kwargs={'timeout': 600})
     except ImportError:
         # Fallback to Celery
         import uuid
@@ -36,6 +37,7 @@ def create_archiver_resource_task(resource, queue):
 
 
 def create_archiver_package_task(package, queue):
+    print("Archiver_3")
     compat_enqueue('archiver.update_package', update_package, queue, [package.id])
 
     log.debug('Archival of package put into celery queue %s: %s',

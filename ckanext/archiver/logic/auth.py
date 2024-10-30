@@ -11,3 +11,13 @@ def archiver_resource_show(context, data_dict):
 def archiver_dataset_show(context, data_dict):
     # anyone
     return {'success': True}
+
+
+def archiver_package_show_or_initiate(context, data_dict):
+    # Sysadmin only
+    return {'success': False}
+
+
+def archiver_resource_show_or_initiate(context, data_dict):
+    # Sysadmin only
+    return {'success': False}
