@@ -131,7 +131,7 @@ def update_resource(resource_id, queue='bulk'):
         raise
 
 
-def update_package(package_id, queue='bulk'):
+def update_package(package_id, queue='QA'):
     '''
     Archive a package.
     '''
@@ -143,6 +143,7 @@ def update_package(package_id, queue='bulk'):
     # Also put try/except around it is easier to monitor ckan's log rather than
     # celery's task status.
     try:
+        print("Archiver_9")
         _update_package(package_id, queue, log)
     except Exception as e:
         if os.environ.get('DEBUG'):
@@ -155,6 +156,7 @@ def update_package(package_id, queue='bulk'):
 
 
 def _update_package(package_id, queue, log):
+    print("Archiver_8")
     from ckan import model
 
     get_action = toolkit.get_action
@@ -179,7 +181,8 @@ def _update_package(package_id, queue, log):
     # archive info. However skip it if there are downstream plugins that will
     # do this anyway, since it is an expensive step to duplicate.
     if 'qa' not in get_plugins_waiting_on_ipipe():
-        _update_search_index(package_id, log)
+        # _update_search_index(package_id, log)
+        pass
     else:
         log.info('Search index skipped %s', package['name'])
 
