@@ -1,18 +1,20 @@
-# Translations template for ckanext-archiver.
+# Arabic translations for ckanext-archiver.
 # Copyright (C) 2025 ORGANIZATION
 # This file is distributed under the same license as the ckanext-archiver
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-archiver 2.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-06 11:53+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2025-03-02 15:42+0500\n"
+"PO-Revision-Date: 2025-03-02 15:42+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,208 +26,210 @@ msgstr ""
 #: ckanext/archiver/templates/report/broken_links.html:16
 #: ckanext/archiver/templates/report/broken_links.html:35
 msgid "Broken links"
-msgstr ""
+msgstr "الروابط المعطلة"
 
 #: ckanext/archiver/reports.py:247
 msgid "Dataset resource URLs that are found to result in errors when resolved."
-msgstr ""
+msgstr "عناوين موارد مجموعة البيانات التي تؤدي إلى أخطاء عند حلها"
 
 #: ckanext/archiver/tasks.py:481 ckanext/archiver/tasks.py:502
 #: ckanext/archiver/tasks.py:712
 #, python-format
 msgid "Content-length %s exceeds maximum allowed value %s"
-msgstr ""
+msgstr "Content-length %s يتجاوز الحد الأقصى للقيمة المسموح بها %s"
 
 #: ckanext/archiver/tasks.py:496
 #, python-format
 msgid "Server content contained an API error message: %s"
-msgstr ""
+msgstr "%s :يحتوى محتوى الخادم على رسالة خطأ من واجهة برمجة التطبيقات"
 
 #: ckanext/archiver/tasks.py:518
 #, python-format
 msgid "Content-length after streaming was %s"
-msgstr ""
+msgstr "%s  طول - المحتوى بعد البث كان "
 
 #: ckanext/archiver/tasks.py:589
 msgid "No value for ckanext-archiver.cache_url_root in config"
-msgstr ""
+msgstr "لا قيمة ل ckanext-archiver.cache_url_root in config"
 
 #: ckanext/archiver/tasks.py:676
 #, python-format
 msgid "URL parsing failure: %s"
-msgstr ""
+msgstr "%s : فشل تحليل عنوان  "
 
 #: ckanext/archiver/tasks.py:681
 #, python-format
 msgid "Invalid url scheme. Please use one of: %s"
-msgstr ""
+msgstr "%s : مخطط عنوان غير صالح .يرجى استخدام واحدة من  "
 
 #: ckanext/archiver/tasks.py:685
 msgid "URL parsing failure - did not find a host name"
-msgstr ""
+msgstr "فشل تحليل عنوان  - لم يتم العثور على اسم المضيف "
 
 #: ckanext/archiver/tasks.py:813 ckanext/archiver/tasks.py:962
 #, python-format
 msgid "Connection error: %s"
-msgstr ""
+msgstr "%s :خطأ في الاتصال "
 
 #: ckanext/archiver/tasks.py:815 ckanext/archiver/tasks.py:964
 #, python-format
 msgid "Invalid HTTP response: %s"
-msgstr ""
+msgstr "%s :غير صالح HTTP استجابة "
 
 #: ckanext/archiver/tasks.py:817 ckanext/archiver/tasks.py:966
 #, python-format
 msgid "Connection timed out after %ss"
-msgstr ""
+msgstr "s%s  انتهت مهلة الاتصال بعد"
 
 #: ckanext/archiver/tasks.py:819 ckanext/archiver/tasks.py:968
 msgid "Too many redirects"
-msgstr ""
+msgstr "عدد كبير جدًا من عمليات إعادة التوجيه"
 
 #: ckanext/archiver/tasks.py:821
 #, python-format
 msgid "Error downloading: %s"
-msgstr ""
+msgstr "%s :خطأ في التنزيل "
 
 #: ckanext/archiver/tasks.py:825
 #, python-format
 msgid "Error with the download: %s"
-msgstr ""
+msgstr "%s :خطأ في عملية التنزيل"
 
 #: ckanext/archiver/tasks.py:957
 msgid "Invalid URL or Redirect Link"
-msgstr ""
+msgstr "العنوان  أو رابط إعادة التوجيه غير صالح"
 
 #: ckanext/archiver/tasks.py:960
 msgid "Could not make HEAD request"
-msgstr ""
+msgstr "HEAD تعذر تقديم طلب "
 
 #: ckanext/archiver/tasks.py:970
 #, python-format
 msgid "Error during request: %s"
-msgstr ""
+msgstr "%s :خطأ أثناء الطلب"
 
 #: ckanext/archiver/tasks.py:972
 #, python-format
 msgid "Error with the request: %s"
-msgstr ""
+msgstr "%s :خطأ في الطلب"
 
 #: ckanext/archiver/tasks.py:979
 #, python-format
 msgid "Server returned HTTP error status: %s %s"
-msgstr ""
+msgstr "%s %s :HTTP أرجع الخادم حالة خطأ"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:38
 msgid "Link is broken"
-msgstr ""
+msgstr "الرابط معطل"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:43
 msgid "This is a one-off failure"
-msgstr ""
+msgstr "هذا فشل لمرة واحدة"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:45
 #, python-format
 msgid ""
 "This resource has failed %(failure_count)s times in a row since it first "
 "failed: %(first_failure)s"
-msgstr ""
+msgstr "لقد فشل هذا المورد %(failure_count)s مرة على التوالي منذ أول فشل له: %(first_failure)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:48
 #, python-format
 msgid "This resource was last ok: %(last_success)s"
-msgstr ""
+msgstr "كان هذا المورد في آخر حالة جيدة: %(last_success)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:50
 #, python-format
-msgid "We do not have a past record of it working since the first check: %(created)s"
-msgstr ""
+msgid ""
+"We do not have a past record of it working since the first check: "
+"%(created)s"
+msgstr "ليس لدينا سجل سابق للعمل منذ الفحص الأول: %(created)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:53
 msgid "Link check is not conclusive"
-msgstr ""
+msgstr "التحقق من الرابط ليس حاسما"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:58
 msgid "Link is ok"
-msgstr ""
+msgstr "الرابط صحيح"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:68
 #, python-format
 msgid "Link checked: %(updated)s"
-msgstr ""
+msgstr "تم فحص الرابط: %(updated)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:39
 msgid "Download cached copy"
-msgstr ""
+msgstr "تحميل النسخة المخزنة مؤقتًا"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:41
 msgid "Size"
-msgstr ""
+msgstr "حجم"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:42
 msgid "Cached on"
-msgstr ""
+msgstr "تم تخزينه مؤقتًا"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:44
 msgid "before it was broken"
-msgstr ""
+msgstr "قبل أن يصبح معطلا"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:47
 msgid "No cached copy available"
-msgstr ""
+msgstr "لا توجد نسخة مخزنة مؤقتًا متاحة"
 
 #: ckanext/archiver/templates/package/resource_read.html:6
 msgid "Additional Information"
-msgstr ""
+msgstr "معلومات إضافية"
 
 #: ckanext/archiver/templates/package/resource_read.html:10
 msgid "Field"
-msgstr ""
+msgstr "حقل"
 
 #: ckanext/archiver/templates/package/resource_read.html:11
 msgid "Value"
-msgstr ""
+msgstr "قيمة"
 
 #: ckanext/archiver/templates/package/resource_read.html:16
 msgid "Last updated"
-msgstr ""
+msgstr "آخر تحديث"
 
 #: ckanext/archiver/templates/package/resource_read.html:17
 #: ckanext/archiver/templates/package/resource_read.html:21
 #: ckanext/archiver/templates/package/resource_read.html:25
 msgid "unknown"
-msgstr ""
+msgstr "غير معروف"
 
 #: ckanext/archiver/templates/package/resource_read.html:20
 msgid "Created"
-msgstr ""
+msgstr "تم الإنشاء"
 
 #: ckanext/archiver/templates/package/resource_read.html:24
 msgid "Format"
-msgstr ""
+msgstr "تنسيق"
 
 #: ckanext/archiver/templates/package/resource_read.html:28
 msgid "License"
-msgstr ""
+msgstr "رخصة"
 
 #: ckanext/archiver/templates/report/broken_links.html:3
 #: ckanext/archiver/templates/report/broken_links.html:14
 #: ckanext/archiver/templates/report/broken_links.html:34
 msgid "Broken datasets"
-msgstr ""
+msgstr "مجموعات البيانات المعطلة"
 
 #: ckanext/archiver/templates/report/broken_links.html:13
 #: ckanext/archiver/templates/report/broken_links.html:42
 msgid "Organization"
-msgstr ""
+msgstr "جهة حكومية"
 
 #: ckanext/archiver/templates/report/broken_links.html:40
 msgid "Dataset"
-msgstr ""
+msgstr "مجموعة البيانات"
 
 #: ckanext/archiver/templates/report/broken_links.html:44
 msgid "Index/position of the resource in the dataset"
-msgstr ""
+msgstr "الفهرس/الموضع للمورد في مجموعة البيانات"
 
 #: ckanext/archiver/templates/report/broken_links.html:44
 msgid "Res"
@@ -237,41 +241,41 @@ msgstr ""
 
 #: ckanext/archiver/templates/report/broken_links.html:46
 msgid "Status"
-msgstr ""
+msgstr "حالة"
 
 #: ckanext/archiver/templates/report/broken_links.html:47
 msgid "Reason"
-msgstr ""
+msgstr "سبب"
 
 #: ckanext/archiver/templates/report/broken_links.html:48
 msgid "Failed download attempts"
-msgstr ""
+msgstr "محاولات تنزيل فاشلة"
 
 #: ckanext/archiver/templates/report/broken_links.html:48
 msgid "No. of fails"
-msgstr ""
+msgstr "عدد مرات الفشل"
 
 #: ckanext/archiver/templates/report/broken_links.html:49
 msgid "First failed attempt"
-msgstr ""
+msgstr "أول محاولة فاشلة"
 
 #: ckanext/archiver/templates/report/broken_links.html:49
 msgid "First fail"
-msgstr ""
+msgstr "أول فشل"
 
 #: ckanext/archiver/templates/report/broken_links.html:50
 msgid "Most recent failed attempt"
-msgstr ""
+msgstr "أحدث محاولة فاشلة"
 
 #: ckanext/archiver/templates/report/broken_links.html:50
 msgid "Latest fail"
-msgstr ""
+msgstr "آخر فشل"
 
 #: ckanext/archiver/templates/report/broken_links.html:51
 msgid "The last time it was successfully obtained"
-msgstr ""
+msgstr "آخر مرة تم فيها الحصول عليه بنجاح."
 
 #: ckanext/archiver/templates/report/broken_links.html:51
 msgid "Last success"
-msgstr ""
+msgstr "آخر نجاح"
 

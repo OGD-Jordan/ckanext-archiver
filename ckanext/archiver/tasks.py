@@ -515,7 +515,7 @@ def download(context, resource, url_timeout=30,
         # record fact that resource is zero length
         log.warning('Resource found was length %i - not archiving. Resource: %s %r',
                     length, resource['id'], url)
-        raise DownloadError(_("Content-length after streaming was %i") % length,
+        raise DownloadError(_("Content-length after streaming was %s") % length,
                             url_redirected_to)
 
     log.info('Resource downloaded: id=%s url=%r cache_filename=%s length=%s hash=%s',

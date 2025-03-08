@@ -10,16 +10,18 @@ from ckanext.archiver import helpers
 from ckanext.archiver import lib
 from ckanext.archiver.model import Archival, aggregate_archivals_for_a_dataset
 from ckanext.archiver import cli
+from ckan.lib.plugins import DefaultTranslation
 
 log = logging.getLogger(__name__)
 
 
-class ArchiverPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
+class ArchiverPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm, DefaultTranslation):
     """
     Registers to be notified whenever CKAN resources are created or their URLs
     change, and will create a new ckanext.archiver celery task to archive the
     resource.
     """
+    p.implements(p.ITranslation, inherit=True)
     p.implements(p.IDomainObjectModification, inherit=True)
     p.implements(p.IConfigurer, inherit=True)
     p.implements(p.IActions)
