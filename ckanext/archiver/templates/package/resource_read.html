@@ -31,7 +31,10 @@
               {# We replaced h.format_resource_items with h.archiver_format_resource_items so that we can hide the archiver key #}
               {% for key, value in h.archiver_format_resource_items(res.items()) %}
                 {% if key not in ('created', 'metadata modified', 'last modified', 'format') %}
-                <tr class="toggle-more"><th scope="row">{{ _(key | capitalize) }}</th><td>{{ _(value) }}</td></tr>
+                <tr class="toggle-more">
+                  <th scope="row">{{ h.safe_translate(key | capitalize) }}</th>
+                  <td>{{ h.safe_translate(value) }}</td>
+                </tr>
                 {% endif %}
               {% endfor %}
             </tbody>
